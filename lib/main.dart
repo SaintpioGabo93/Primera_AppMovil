@@ -4,6 +4,9 @@
 /// - Se deben incluir las dependencias necesarias en el archivo `pubspec.yaml`.
 import 'package:flutter/material.dart';
 
+
+/// Importamos una nueva libreria que sera el nombre del archivo que hicimos con la clase
+import 'package:primer_programa/gradient_container.dart';
 /// Función principal que inicia la aplicación.
 ///
 /// - `main` es el punto de entrada de una aplicación Flutter.
@@ -16,40 +19,13 @@ import 'package:flutter/material.dart';
 /// - Flutter utiliza un **árbol de widgets** donde cada widget es un objeto o estructura de datos en memoria.
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp( // Como en la clase que hicimos añadimos const, aquí necesitamos añadir un const. 
       home: Scaffold(
         /// El widget `Scaffold` proporciona una estructura base para la aplicación.
         /// 
         /// - Puede incluir elementos como `AppBar`, `Body` y otros componentes.
         /// - Aquí se utiliza para configurar la interfaz principal.
-        body: Container(
-          /// El widget `Container` se utiliza para crear un gradiente de colores.
-          /// 
-          /// - Se agrega entre `Scaffold` y `Center` para aplicar un fondo decorado.
-          /// - La propiedad `decoration` usa `BoxDecoration` para definir un gradiente.
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 26, 2, 80),
-                Color.fromARGB(255, 129, 24, 129),
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: const Center(
-            /// El widget `Center` alinea su hijo en el centro del área disponible.
-            /// 
-            /// - Aquí envuelve un `Text` para centrarlo en la pantalla.
-            child: Text(
-              'Piter es gei, jajajaja',
-              style: TextStyle(
-                color: Color.fromARGB(255, 255, 255, 255),
-                fontSize: 28,
-              ),
-            ),
-          ),
-        ),
+        body: GradientContainer(), // Esta fue la clase que hicimos para ahorar codigo en nuestro loop principal
       ),
     ),
   );
