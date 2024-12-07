@@ -1,5 +1,6 @@
 // Siempre debemos importar las librerias para cada nuevo archivito que estemos usando
 import 'package:flutter/material.dart';
+import 'package:primer_programa/styled_text.dart'
 
 
 /// Vamos a crear una clase que contenga todas las caracteristicas que habiamos programado antes. 
@@ -29,14 +30,10 @@ class GradientContainer extends StatelessWidget{
             /// El widget `Center` alinea su hijo en el centro del área disponible.
             /// 
             /// - Aquí envuelve un `Text` para centrarlo en la pantalla.
-            child: Text(
-              'Piter es gei, jajajaja',
-              style: TextStyle(
-                color: Color.fromARGB(255, 255, 255, 255),
-                fontSize: 28,
-              ),
-            ),
+            child: StyledText(),
           ),
         );
   }
 }
+
+

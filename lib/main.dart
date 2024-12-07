@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 /// Importamos una nueva libreria que sera el nombre del archivo que hicimos con la clase
 import 'package:primer_programa/gradient_container.dart';
+
 /// Función principal que inicia la aplicación.
 ///
 /// - `main` es el punto de entrada de una aplicación Flutter.
