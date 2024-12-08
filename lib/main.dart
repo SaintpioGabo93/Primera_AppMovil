@@ -26,7 +26,10 @@ void main() {
         /// 
         /// - Puede incluir elementos como `AppBar`, `Body` y otros componentes.
         /// - Aquí se utiliza para configurar la interfaz principal.
-        body: GradientContainer(), // Esta fue la clase que hicimos para ahorar codigo en nuestro loop principal
+        body: GradientContainer(
+          Color.fromARGB(255, 25, 6, 54),
+          Color.fromARGB(255, 129, 38, 122),
+        ), // Esta fue la clase que hicimos para ahorar codigo en nuestro loop principal
       ),
     ),
   );
